@@ -1,0 +1,190 @@
+.main
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.hero
+{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    background-color: aquamarine;
+    text-align: center;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.mypicture
+{
+    height: 400px;
+    width: 450px;
+    border-radius: 50%;
+}
+.introduction
+{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+.resume
+{
+    text-align: center;
+    height: 30vh;
+    margin-top: 50px;
+}
+.instruction
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.resumebutton
+{
+    text-decoration: none;
+    background-color: peru;
+    font-size: 40px;
+    color: aliceblue;
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+}
+.projects
+{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    color: deeppink;
+}
+.project_photos
+{
+    height: 150px;
+    width: 100%;
+}
+.my
+{
+    float: left;
+    height: 280px;
+    width: 30%;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+.about
+{
+    text-align:left;
+    font-size: 1.25rem;
+}
+.contact
+{
+    clear: both;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 5%;
+}
+.button
+{
+    background-color: aqua;
+    color: aliceblue;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 30px; 
+    font-size:2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.footer
+{
+    display: flex;
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+/* Default Styles (already present in your CSS) */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .mypicture {
+        width: 80%;
+        height: auto;
+    }
+
+    .introduction {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mypicture {
+        width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .resume {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .resumebutton {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_photos {
+        height: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .mypicture {
+        width: 100%;
+        height: auto;
+    }
+
+    .introduction {
+        font-size: 1em;
+    }
+
+    .resumebutton {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project_photos {
+        width: 100%;
+    }
+}
